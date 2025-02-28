@@ -2,12 +2,12 @@ package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.UseMainMethod;
 
-@SpringBootTest
+@SpringBootTest(useMainMethod = UseMainMethod.ALWAYS)
 class SampleAdderssApiApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+	void contextLoads() {}
 
 }
